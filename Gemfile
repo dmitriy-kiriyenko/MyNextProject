@@ -21,6 +21,8 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'guard-rspec'
+
   # helping development gems
   gem 'pry-rails'
   gem 'pry', :require => false
@@ -29,6 +31,16 @@ group :development, :test do
   gem 'hirb', :require => false
   gem 'scv', :require => false
   gem 'mailcatcher', :require => false
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'factory_girl_rails'
+  gem 'guard-spork'
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
 end
 
 # Use unicorn as the app server
