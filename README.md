@@ -1,4 +1,4 @@
 MyNextProject
 =============
 
-My dream about next time I type `rails new`
+My dream about next time I type `rails new`.
